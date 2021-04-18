@@ -4,6 +4,8 @@ Update the .env files to include your own spoonacular API key.
 
 ## Run yarn command to download the dependencies
 
+inside the root folder run the command:
+
 `yarn`
 
 # Without Docker
@@ -14,11 +16,15 @@ run `yarn dev` command to run it in local development mode
 
 Map the port you want the application to run from Dockerfile. Defaults to port: 3000
 
-## build the image
+## Build the image
+
+inside the root folder run the command:
 
 `docker build --pull --rm -f "Dockerfile" -t foody:latest "."`
 
-## run the image in container
+## Run the image in container
+
+inside the root folder run the command:
 
 `docker run --rm -d -p 3000:3000/tcp foody:latest`
 
