@@ -1,34 +1,42 @@
 # How to run
 
-Update the .env files to include your own spoonacular API key.
+First clone the project.
 
-## Run yarn command to download the dependencies
+Then update the .env files to include your own spoonacular API key.
 
-inside the root folder run the command:
+### Run yarn command to download the dependencies
+
+Inside the root folder run the command:
 
 `yarn`
 
-# Without Docker
+## Without Docker
 
-run `yarn dev` command to run it in local development mode
+Run `yarn dev` command to run it in local development mode.
 
-# With Docker
+Application should be running in localhost:3000
+
+## With Docker
 
 Map the port you want the application to run from Dockerfile. Defaults to port: 3000
 
 ## Build the image
 
-inside the root folder run the command:
+Inside the root folder run the command:
 
 `docker build --pull --rm -f "Dockerfile" -t foody:latest "."`
 
+this should take a few minutes.
+
 ## Run the image in container
 
-inside the root folder run the command:
+Inside the root folder run the command:
 
 `docker run --rm -d -p 3000:3000/tcp foody:latest`
 
-### notes
+Application should be running in localhost:3000
+
+### Notes
 
 - Application includes all the requirements. User can search for ingredients and can see last 10 queries.
 - User can click the history to repat the search.
