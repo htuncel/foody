@@ -1,8 +1,14 @@
+# Ingredient Search
+
+A web application where a user can search for food ingredients.
+
 # How to run
 
 First clone the project.
 
 Then update the .env files to include your own spoonacular API key.
+
+---
 
 ### Run yarn command to download the dependencies
 
@@ -10,15 +16,21 @@ Inside the root folder run the command:
 
 `yarn`
 
+---
+
 ## Without Docker
 
 Run `yarn dev` command to run it in local development mode.
 
 Application should be running in localhost:3000
 
+---
+
 ## With Docker
 
 Map the port you want the application to run from Dockerfile. Defaults to port: 3000
+
+---
 
 ## Build the image
 
@@ -28,6 +40,8 @@ Inside the root folder run the command:
 
 this should take a few minutes.
 
+---
+
 ## Run the image in container
 
 Inside the root folder run the command:
@@ -35,6 +49,8 @@ Inside the root folder run the command:
 `docker run --rm -d -p 3000:3000/tcp foody:latest`
 
 Application should be running in localhost:3000
+
+---
 
 ### Notes
 
